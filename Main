@@ -1,0 +1,33 @@
+//Main.java
+package com.company;
+
+import java.util.ArrayList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+    public class Main {
+
+        public static void main(String[] args) {
+            Teachers lizzy = new Teachers(1, "Lizzy", 700);
+            Teachers amanda = new Teachers(2, "Amanda", 800);
+            Teachers katie = new Teachers(3, "Katie", 600);
+            List<Teachers> teachersList = new ArrayList<>();
+            teachersList.add(lizzy);
+            teachersList.add(amanda);
+            teachersList.add(katie);
+
+            Student amy= new Student(1,"Amy",3);
+            Student mark= new Student(2,"Mark",5);
+            Student john= new Student(3,"John",2);
+            List<Student> studentList= new ArrayList<>();
+            studentList.add(amy);
+            studentList.add(mark);
+            studentList.add(john);
+            School paticipants = new School(teachersList, studentList);
+
+
+            System.out.println(lizzy.toString());
+            System.out.println(amy.toString());
+        }
+    }
